@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصواوي للأجهزة الإلكترونية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: center;
+        }
+        header {
+            background-image: url('https://yourstoreimageurl.com/store.jpg'); /* رابط صورة متجر الهواتف */
+            background-size: cover;
+            color: white;
+            padding: 60px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            background-color: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        nav {
+            background-color: #444;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .products, .contact-form, .order-form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .product {
+            display: inline-block;
+            width: 45%;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+            vertical-align: top;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3, .product p {
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 14px;
+        }
+        .product .price {
+            font-weight: bold;
+            color: #e91e63;
+        }
+        .order-form input[type="text"], .order-form input[type="tel"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .order-form button {
+            padding: 10px 20px;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>متجر الصواوي للأجهزة الإلكترونية</h1>
+</header>
+
+<nav>
+    <a href="#new-devices">أجهزة جديدة</a>
+    <a href="#used-devices">أجهزة مستعملة</a>
+    <a href="#laptops">لابتوب استيراد</a>
+    <a href="#contact">اتصل بنا</a>
+</nav>
+
+<section id="new-devices" class="products">
+    <h2>أجهزة جديدة</h2>
+    <div class="product">
+        <img src="iphone.jpeg" alt="شاومي A53"> <!-- رابط صورة شاومي A53 -->
+        <h3>شاومي A53</h3>
+        <p>ذاكرة: 128 جيجا، رام: 4 جيجا</p>
+        <p class="price">السعر: 6500 جنيه</p>
+        <button onclick="orderProduct('شاومي A53')">اطلب الآن</button>
+    </div>
+    <div class="product">
+        <img src="iphone-15-pro-max.png" alt="ايفون 15 Pro Max"> <!-- رابط صورة ايفون 15 Pro Max -->
+        <h3>ايفون 15 Pro Max</h3>
+        <p>ذاكرة: 512 جيجا، مادة التاتنيوم، ذكاء اصطناعي</p>
+        <p class="price">السعر: 60000 جنيه</p>
+        <button onclick="orderProduct('ايفون 15 Pro Max')">اطلب الآن</button>
+    </div>
+</section>
+
+<section id="used-devices" class="products">
+    <h2>أجهزة مستعملة</h2>
+    <div class="product">
+        <img src="iphone.jpeg" alt="iPhone 11 Pro Max"> <!-- رابط صورة iPhone 11 Pro Max -->
+        <h3>iPhone 11 Pro Max</h3>
+        <p>ذاكرة: 256 جيجا، رام: 4 جيجا</p>
+        <p>مغير شاشة خلع أصلية، لون زيتي</p>
+        <p class="price">السعر: 15000 جنيه</p>
+        <button onclick="orderProduct('iPhone 11 Pro Max')">اطلب الآن</button>
+    </div>
+    <div class="product">
+        <img src="iphone-xs-max.jpg" alt="iPhone XS Max"> <!-- رابط صورة iPhone XS Max -->
+        <h3>iPhone XS Max</h3>
+        <p>ذاكرة: 64 جيجا، رام: 4 جيجا</p>
+        <p>مغير شاشة GX</p>
+        <p class="price">السعر: 8000 جنيه</p>
+        <button onclick="orderProduct('iPhone XS Max')">اطلب الآن</button>
+    </div>
+    <div class="product">
+        <img src="xs 10s.jpg" alt="شاومي "> <!-- رابط صورة شاومي A10s -->
+        <h3>شاومي 10s</h3>
+        <p>ذاكرة: 128 جيجا، رام: 6 جيجا</p>
+        <p>مع العلبة وكل مشتملاته</p>
+        <p class="price">السعر: 6000 جنيه</p>
+        <button onclick="orderProduct('شاومي A10s')">اطلب الآن</button>
+    </div>
+    <div class="product">
+        <img src="oppo 38.jpg" alt="Oppo A38"> <!-- رابط صورة Oppo A38 -->
+        <h3>Oppo A38</h3>
+        <p>ذاكرة: 128 جيجا، رام: 6 جيجا</p>
+        <p>مغير شاشة ومع الشاحن</p>
+        <p class="price">السعر: 5000 جنيه</p>
+        <button onclick="orderProduct('Oppo A38')">اطلب الآن</button>
+    </div>
+    <div class="product">
+        <img src="Xiaomi-Redmi-Note-11.jpg" alt="شاومي 11"> <!-- رابط صورة شاومي 11 -->
+        <h3>شاومي 11</h3>
+        <p>ذاكرة: 128 جيجا، رام: 4 جيجا</p>
+        <p>مع الكرتونة وكل شيء</p>
+        <p class="price">السعر: 6500 جنيه</p>
+        <button onclick="orderProduct('شاومي 11')">اطلب الآن</button>
+    </div>
+</section>
+
+<section id="laptops" class="products">
+    <h2>لابتوب استيراد</h2>
+    <div class="product">
+        <img src="hp lap.jpg" alt="HP ProBook"> <!-- رابط صورة HP ProBook -->
+        <h3>HP ProBook</h3>
+        <p>ذاكرة: 256 جيجا SSD، رام: 8 جيجا DDR4</p>
+        <p>كارت الشاشة: up to 4 جيجا، الشاشة: 14.6 بوصة</p>
+        <p class="price">السعر: 10500 جنيه</p>
+        <button onclick="orderProduct('HP ProBook')">اطلب الآن</button>
+    </div>
+    <div class="product">
+        <img src="hp lap.jpg" alt="Dell 5570"> <!-- رابط صورة Dell 5570 -->
+        <h3>Dell 5570</h3>
+        <p>ذاكرة: 512 جيجا SSD، رام: 16 جيجا DDR4</p>
+        <p>كارت الشاشة: up to 12 جيجا، الشاشة: 15.6 بوصة</p>
+        <p class="price">السعر: 12500 جنيه</p>
+        <button onclick="orderProduct('Dell 5570')">اطلب الآن</button>
+    </div>
+</section>
+
+<section id="contact" class="contact-form">
+    <h2>اتصل بنا</h2>
+    <p>إذا واجهتك أي مشكلة أو استفسار، يرجى التواصل معنا هاتفياً أو عبر واتساب على الرقم: 01067250858</p>
+</section>
+
+<section id="order" class="order-form">
+    <h2>تأكيد الطلب</h2>
+    <form onsubmit="confirmOrder(event)">
+        <input type="text" id="orderName" placeholder="الاسم بالكامل" required>
+        <input type="tel" id="orderPhone" placeholder="رقم الهاتف" required>
+        <input type="text" id="orderAddress" placeholder="العنوان" required>
+        <button type="submit">تأكيد الطلب</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Designed by Eng Ahmed Sherif . جميع الحقوق محفوظة.</p>
+</footer>
+
+<script>
+    function orderProduct(productName) {
+        const orderForm = document.getElementById('order');
+        orderForm.scrollIntoView({behavior: 'smooth'});
+        document.getElementById('orderName').focus();
+    }
+
+    function confirmOrder(event) {
+        event.preventDefault();
+        alert('طلبك وصلنا! استنى حد هيكلمك يأكد معاك حجز الجهاز. شكراً لزيارتك موقعنا.');
+        window.location.reload();  // يعيد توجيه المستخدم إلى الصفحة الرئيسية
+    }
+</script>
+
+</body>
+</html>
